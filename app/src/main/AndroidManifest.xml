@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FutureFemTech"
         tools:targetApi="31">
         <activity
+            android:name=".Forum"
+            android:exported="false" />
+        <activity
             android:name=".Mentorships"
             android:exported="false" />
         <activity

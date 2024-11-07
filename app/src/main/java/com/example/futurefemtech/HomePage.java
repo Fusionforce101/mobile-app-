@@ -34,6 +34,7 @@ public class HomePage extends AppCompatActivity {
         // menu navbar
         ImageButton nav = findViewById(R.id.navmenu);
 
+
         TextView tvInfo1 = findViewById(R.id.tvinfo1);
         String info1 ="Unlock the Future with STEM \n" +
                 "- Personalized Just for You!";
@@ -41,6 +42,7 @@ public class HomePage extends AppCompatActivity {
          TextView tvInfo2 = findViewById(R.id.tvinfo2);
          String info2 = "Empowering the next generation of girls in STEM through personalized \n" +
                  "learning paths that adapt to your passions, pace, and progress.";
+         tvInfo2.setText(info2);
 
 
 
@@ -56,9 +58,12 @@ public class HomePage extends AppCompatActivity {
         career.setText(data4);
 // CAREER
         TextView careerinfo = findViewById(R.id.tvinfoicon1);
-        String datacareer = "Explore various career paths in STEM, from software \n" +
-                "development to environmental engineering. Find the best fit \n" +
-                "for your skills and interests, and take the first step towards \n" +
+        String datacareer = "Explore various career paths \n" +
+                "in STEM, from software \n" +
+                "development to environmental \n" +
+                "engineering. Find the best fit \n" +
+                "for your skills and interests,\n" +
+                " and take the first step towards \n" +
                 "a rewarding future.";
         careerinfo.setText(datacareer);
 
@@ -68,9 +73,12 @@ public class HomePage extends AppCompatActivity {
         // MENTORSHIP
 
         TextView mentorshipInfo = findViewById(R.id.tvinfoicon2);
-        String mInfo = "Connect with experienced professionals who can guide you \n" +
-                "through your STEM journey. Learn from their experiences, get \n" +
-                "valuable advice, and gain insights that will help you succeed in \n" +
+        String mInfo = "Connect with experienced \n" +
+                " professionals who can guide you \n" +
+                "through your STEM journey. \n" +
+                "Learn from their experiences, get \n" +
+                "valuable advice, and gain insights \n" +
+                "that will help you succeed in \n" +
                 "your chosen field.\n" +
                 "\n";
         mentorshipInfo.setText(mInfo);
@@ -82,11 +90,15 @@ public class HomePage extends AppCompatActivity {
         scolarshipTitle.setText(sTitle);
 
         TextView scolarshipInfo = findViewById(R.id.tvinfoicon3);
-        String sInfo = "Discover scholarship opportunities designed to support\n" +
-                " women pursuing STEM education. Get financial assistance, \n" +
-                "mentorship, and resources to help you achieve your academic\n" +
-                " and professional goals.\n" +
-                "\n";
+        String sInfo = "Discover scholarship opportunities\n" +
+                " designed to support\n" +
+                " women pursuing STEM education. \n" +
+                "Get financial assistance, \n" +
+                "mentorship, \n" +
+                "and resources to help" +
+                " you achieve your\n" +
+                "  academic and professional \n" +
+                "goals.\n";
         scolarshipInfo.setText(sInfo);
 
         // buttons for the scholarships and mentorships
@@ -113,12 +125,37 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
-        // button
-        Button clickToCareerPath = findViewById(R.id.btnclickcareer);
+        // button careerpath
+        Button clickToCareerPath = findViewById(R.id.clicktocareerpath);
         String dataOne = "Discover Your Career Path";
         clickToCareerPath.setText(dataOne);
 
         clickToCareerPath.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent passToCareerPath = new Intent(HomePage.this, CareerPath.class);
+                startActivity(passToCareerPath);
+            }
+        });
+
+        //forum
+        Button forum = findViewById(R.id.forum);
+        String forumInfo ="Join Our Forum";
+        forum.setText(forumInfo);
+         // setting on click
+        forum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent passToForum = new Intent(HomePage.this, Forum.class);
+                startActivity(passToForum);
+            }
+        });
+        // button
+        Button clickToCareerPath2 = findViewById(R.id.btnclickcareer);
+        String dataOne1 = "Explore Careers";
+        clickToCareerPath2.setText(dataOne1);
+
+        clickToCareerPath2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent passToCareerPath = new Intent(HomePage.this, CareerPath.class);
