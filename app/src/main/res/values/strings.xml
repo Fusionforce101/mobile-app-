@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FutureFemTech</string>
+    <string name="cover">cover</string>
+    <string name="futurefemtech">FUTUREFEMTECH</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="yr_mm_dd">Yr/Mm/Dd</string>
+    <string name="enter_full_names">enter full names</string>
+    <string name="enter_email">enter email</string>
+    <string name="enter_password">enter password</string>
+    <string name="confrim_password">confrim password</string>
+</resources>
