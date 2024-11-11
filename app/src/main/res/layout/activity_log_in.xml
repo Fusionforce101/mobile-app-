@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/loginaccount"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="#FFF8E1"
     android:layout_margin="3dp"
     android:orientation="vertical"
     tools:context=".LogIn">
@@ -22,21 +22,25 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="40dp"
+        android:layout_height="500dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:background="@drawable/inputs"
         android:orientation="vertical">
 
         <EditText
             android:id="@+id/username"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:autofillHints="full names"
             android:ems="10"
+            android:layout_marginTop="20dp"
             android:hint="@string/username"
             android:inputType="text"
             android:minHeight="48dp"
             android:textAlignment="center"
             android:text=""
+            android:background="@drawable/edittv"
             android:textColorHint="#8D6E63"
             android:textSize="18sp"
             tools:ignore="VisualLintTextFieldSize" />
@@ -44,7 +48,7 @@
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:autofillHints="password"
@@ -52,6 +56,7 @@
             android:hint="@string/password"
             android:inputType="textPassword"
             android:textAlignment="center"
+            android:background="@drawable/edittv"
             android:minHeight="48dp"
             android:textColorHint="#8D6E63"
             android:textSize="18sp"
@@ -62,9 +67,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:textStyle="bold"
             android:text=""
+            android:background=""
             tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
