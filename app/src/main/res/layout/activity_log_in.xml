@@ -70,7 +70,7 @@
             android:layout_marginTop="50dp"
             android:textStyle="bold"
             android:text=""
-            android:background=""
+            android:background="@drawable/btn"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
