@@ -2,9 +2,11 @@ package com.example.futurefemtech;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -33,17 +35,60 @@ public class HomePage extends AppCompatActivity {
 
         // menu navbar
         ImageButton nav = findViewById(R.id.navmenu);
+        nav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu popMenu = new PopupMenu(HomePage.this,v);
+                // added the list to the nav
+                popMenu.getMenu().add("About Us");
+                popMenu.getMenu().add("Reviews");
+                popMenu.getMenu().add("Partners");
+                popMenu.getMenu().add("Forum");
+
+                // setting the items added on click
+                popMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getTitle().toString()){
+                            case "About Us":
+                                Intent passToAboutPage = new Intent(HomePage.this, AboutUs.class);
+                                startActivity(passToAboutPage);
+                                return true;
+                            case "Reviews":
+                                Intent passToReviewsPage = new Intent(HomePage.this, Reviews.class);
+                                startActivity(passToReviewsPage);
+                                return true;
+
+                            case "Partners":
+                                Intent passToPartnersPage = new Intent(HomePage.this, Partners.class);
+                                startActivity(passToPartnersPage);
+                                return true;
+
+                            case "Forum":
+                                Intent passToForumPage = new Intent(HomePage.this, Forum.class);
+                                startActivity(passToForumPage);
+                                return true;
+                            default:
+                                return false;
+                        }
+                        }
+
+                });
+
+                // Show the popup menu
+                popMenu.show();
+            }
+        });
 
 
         TextView tvInfo1 = findViewById(R.id.tvinfo1);
-        String info1 ="Unlock the Future with STEM \n" +
+        String info1 = "Unlock the Future with STEM \n" +
                 "- Personalized Just for You!";
         tvInfo1.setText(info1);
-         TextView tvInfo2 = findViewById(R.id.tvinfo2);
-         String info2 = "Empowering the next generation of girls in STEM through personalized \n" +
-                 "learning paths that adapt to your passions, pace, and progress.";
-         tvInfo2.setText(info2);
-
+        TextView tvInfo2 = findViewById(R.id.tvinfo2);
+        String info2 = "Empowering the next generation of girls in STEM through personalized \n" +
+                "learning paths that adapt to your passions, pace, and progress.";
+        tvInfo2.setText(info2);
 
 
         TextView info3 = findViewById(R.id.tvinfo3);
@@ -126,30 +171,7 @@ public class HomePage extends AppCompatActivity {
         });
 
         // button careerpath
-        Button clickToCareerPath = findViewById(R.id.clicktocareerpath);
-        String dataOne = "Discover Your Career Path";
-        clickToCareerPath.setText(dataOne);
 
-        clickToCareerPath.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent passToCareerPath = new Intent(HomePage.this, CareerPath.class);
-                startActivity(passToCareerPath);
-            }
-        });
-
-        //forum
-        Button forum = findViewById(R.id.forum);
-        String forumInfo ="Join Our Forum";
-        forum.setText(forumInfo);
-         // setting on click
-        forum.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent passToForum = new Intent(HomePage.this, Forum.class);
-                startActivity(passToForum);
-            }
-        });
         // button
         Button clickToCareerPath2 = findViewById(R.id.btnclickcareer);
         String dataOne1 = "Explore Careers";
@@ -162,17 +184,6 @@ public class HomePage extends AppCompatActivity {
                 startActivity(passToCareerPath);
             }
         });
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }

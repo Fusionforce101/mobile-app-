@@ -62,7 +62,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/dateofbirth2"
+                android:id="@+id/dateofbirth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -84,23 +84,9 @@
                 android:layout_marginTop="2dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/baseline_calendar_month_24" />
+                app:srcCompat="@drawable/baseline_calendar_month_24"
+                tools:ignore="ContentDescription" />
         </LinearLayout>
-
-        <EditText
-            android:id="@+id/dateofbirth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:autofillHints="dateofbirth"
-            android:ems="10"
-            android:hint="@string/yr_mm_dd"
-            android:inputType="text"
-            android:minHeight="48dp"
-            android:text=""
-            android:textAlignment="center"
-            android:textColorHint="#8D6E63"
-            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/passone"

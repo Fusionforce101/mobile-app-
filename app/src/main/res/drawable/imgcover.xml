@@ -3,6 +3,7 @@
         <bitmap
             android:src="@drawable/coverimg"
             android:gravity="fill"
-            android:tileMode="disabled" />
+            android:tileMode="disabled"
+            android:alpha="0.3"/>
     </item>
 </layer-list>

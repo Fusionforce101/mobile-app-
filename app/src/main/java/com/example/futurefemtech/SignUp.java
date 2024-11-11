@@ -1,9 +1,14 @@
 package com.example.futurefemtech;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -41,6 +46,32 @@ public class SignUp extends AppCompatActivity {
         TextView signInTitle = findViewById(R.id.createaccointtitle);
         String data2 = "CREATE YOUR ACCOUNT";
         signInTitle.setText(data2);
+
+        EditText setCalendar = findViewById(R.id.dateofbirth);
+
+        ImageButton calenderCc = findViewById(R.id.imageButton);
+        calenderCc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Calendar cc = Calendar.getInstance();
+                int month = cc.get(Calendar.MONTH);
+                int year = cc.get(Calendar.YEAR);
+                int dayOfMonth = cc.get(Calendar.DAY_OF_MONTH);
+
+                // for the date picker
+                DatePickerDialog datePickerDialog = new DatePickerDialog(
+                        SignUp.this,
+                        (view1, selectedYear, selectedMonth, selectedDay) -> {
+                            // selectedMonth is zero-indexed
+                            String date = selectedDay + "/" + (selectedMonth + 1) + "/" + selectedYear;
+                            setCalendar.setText(date);
+                        },
+                        year, month, dayOfMonth
+                );
+                datePickerDialog.show();
+
+            }
+        });
 
     }
 }

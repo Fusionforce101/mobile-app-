@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8E1"
+    android:layout_margin="3dp"
+    tools:context=".Partners">
+
+    <TextView
+        android:id="@+id/titlePartners"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/missionInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tvbody"
+                android:padding="9dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:transitionGroup="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/alx"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/alx"
+                        tools:ignore="ContentDescription,ImageContrastCheck,RtlSymmetry,SpeakableTextPresentCheck" />
+
+
+                    <ImageButton
+                        android:id="@+id/irwieLogo"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/iwrielogo"
+                        tools:ignore="ContentDescription,ImageContrastCheck,RtlSymmetry,SpeakableTextPresentCheck" />
+
+
+                    <ImageButton
+                        android:id="@+id/mastercard"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/mastercard"
+                        tools:ignore="ContentDescription,ImageContrastCheck,RtlSymmetry,SpeakableTextPresentCheck" />
+
+
+                    <ImageButton
+                        android:id="@+id/sheCodes"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/shecodes"
+                        tools:ignore="ContentDescription,ImageContrastCheck,RtlSymmetry,SpeakableTextPresentCheck" />
+
+
+                    <ImageButton
+                        android:id="@+id/chix"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/chix"
+                        tools:ignore="ContentDescription,ImageContrastCheck,RtlSymmetry,SpeakableTextPresentCheck" />
+
+
+                    <ImageButton
+                        android:id="@+id/techCard"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/techcard"
+                        tools:ignore="ContentDescription,ImageContrastCheck,RtlSymmetry,SpeakableTextPresentCheck" />
+
+
+                    <ImageButton
+                        android:id="@+id/womenCodeLogo"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/womencodelogo"
+                        tools:ignore="ContentDescription,ImageContrastCheck,RtlSymmetry,SpeakableTextPresentCheck" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:transitionGroup="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/anotherPartner"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/anotherpartner"
+                        tools:ignore="ContentDescription,RtlSymmetry,SpeakableTextPresentCheck" />
+
+
+                    <ImageButton
+                        android:id="@+id/logoPartners"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/logopatners"
+                        tools:ignore="ContentDescription" />
+
+
+                    <ImageButton
+                        android:id="@+id/million"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/million"
+                        tools:ignore="ContentDescription,RtlSymmetry,SpeakableTextPresentCheck" />
+
+
+                    <ImageButton
+                        android:id="@+id/spaceYaTech"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/spaceyatech"
+                        tools:ignore="ContentDescription,RtlSymmetry,SpeakableTextPresentCheck" />
+
+
+                    <ImageButton
+                        android:id="@+id/girlPartner"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/girlpartner"
+                        tools:ignore="ContentDescription,RtlSymmetry,SpeakableTextPresentCheck" />
+
+
+                    <ImageButton
+                        android:id="@+id/witi"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/witi"
+                        tools:ignore="ContentDescription,RtlSymmetry,SpeakableTextPresentCheck" />
+
+
+                    <ImageButton
+                        android:id="@+id/womenInTechAfrica"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/partnersshape"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/womenintechafrica"
+                        tools:ignore="ContentDescription,RtlSymmetry,SpeakableTextPresentCheck" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/titleBenefits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:padding="9dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/benefits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/tvbody"
+                android:padding="9dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
