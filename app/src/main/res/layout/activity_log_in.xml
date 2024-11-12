@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="#FFF8E1"
     android:layout_margin="3dp"
     android:orientation="vertical"
     tools:context=".LogIn">
@@ -25,7 +24,6 @@
         android:layout_height="500dp"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:background="@drawable/inputs"
         android:orientation="vertical">
 
         <EditText

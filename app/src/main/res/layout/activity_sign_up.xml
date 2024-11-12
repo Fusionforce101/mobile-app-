@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFF8E1"
     android:gravity="center"
     tools:context=".SignUp">
 
@@ -39,7 +38,6 @@
             android:inputType="text"
             android:minHeight="48dp"
             android:text=""
-
             android:textAlignment="center"
             android:textColorHint="#8D6E63"
             android:textSize="18sp"
@@ -101,7 +99,6 @@
             android:autofillHints="password"
             android:ems="10"
             android:hint="@string/enter_password"
-
             android:inputType="textPassword"
             android:minHeight="48dp"
             android:textAlignment="center"
