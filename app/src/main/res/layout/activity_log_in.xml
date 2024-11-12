@@ -40,7 +40,6 @@
             android:minHeight="48dp"
             android:textAlignment="center"
             android:text=""
-            android:background="@drawable/edittv"
             android:textColorHint="#8D6E63"
             android:textSize="18sp"
             tools:ignore="VisualLintTextFieldSize" />
@@ -56,7 +55,6 @@
             android:hint="@string/password"
             android:inputType="textPassword"
             android:textAlignment="center"
-            android:background="@drawable/edittv"
             android:minHeight="48dp"
             android:textColorHint="#8D6E63"
             android:textSize="18sp"
